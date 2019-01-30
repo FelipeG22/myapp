@@ -1,0 +1,22 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Autor</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-list>
+        <ion-item *ngFor="let a of autores" (click)="detalhesAutores(a)">
+          <ion-avatar item-start>
+            <img src="{{a.foto}}">
+          </ion-avatar>
+          <h2>{{a.autor}}</h2>
+          <h2>{{a.email}}</h2>
+        </ion-item>
+      </ion-list>
+
+</ion-content>

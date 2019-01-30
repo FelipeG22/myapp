@@ -1,0 +1,24 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Autor: {{autor?.autor}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-card>
+    <img src="{{autor?.foto}}"/>
+    <ion-card-content>
+      <ion-card-title>
+        {{autor?.autor}}
+        </ion-card-title>
+      <p>
+        {{autor?.email}}
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
